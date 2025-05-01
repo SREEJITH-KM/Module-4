@@ -4,7 +4,7 @@
 ---
 
 ### AIM  
-To write a Python program to take the radius from the user and find the area of a circle using the class name `umbrella` and function name `rain`.
+Write Python Program to take the radius from the user and find the area of the circle using class name 'umbrella' and function name 'rain'
 
 ---
 
@@ -28,16 +28,34 @@ To write a Python program to take the radius from the user and find the area of 
 ### PROGRAM
 
 ```
+import math
+
+class pen:
+
+    @staticmethod
+
+    def stationary(radius):
+
+        area=math.pi*radius**2
+
+        return area
+
+radius=float(input())
+
+area=pen.stationary(radius)
+
+print(f"Area of circle: {area:.2f}")
 
 
 
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/ec183f51-71e7-4170-acf8-2287cb0b3f62)
 
 
 
 ### RESULT
-
+Thus the program is executed successfully
 
 
