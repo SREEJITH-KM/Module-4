@@ -23,12 +23,49 @@ To create a Python program that prompts the user for a list of grades separated 
 ### PROGRAM
 
 ```
-Reg.No
-Name
+Reg.No 212223070004
+Name dhushanth
 Add Your Code Here
 
 ```
+def get_grades():
+    user_input = input("Enter grades separated by commas: ")
+    grade_strings = user_input.split(',')
+    grades = []
+
+    for i, grade_str in enumerate(grade_strings):
+        try:
+            grade = int(grade_str.strip())
+            grades.append(grade)
+        except ValueError:
+            print(f"Error: '{grade_str.strip()}' is not a valid integer.")
+
+    return grades
+
+# Run the program
+def get_grades():
+    user_input = input("Enter grades separated by commas: ")
+    grade_strings = user_input.split(',')
+    grades = []
+
+    for i, grade_str in enumerate(grade_strings):
+        try:
+            grade = int(grade_str.strip())
+            grades.append(grade)
+        except ValueError:
+            print(f"Error: '{grade_str.strip()}' is not a valid integer.")
+
+    return grades
+
+# Run the program
+if __name__ == "__main__":
+    grades = get_grades()
+    print("Valid grades entered:", grades)
+
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/4b9f6eaa-65df-4b21-bd7c-9f7c59237781)
+
 
 ### RESULT
+thus the program is executed successfully
